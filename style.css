@@ -1,0 +1,133 @@
+/* CSS file to implement style to 'index.html' file. */
+
+*{ /*CSS rules or styling for all elements in the document  */
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#main_box { /*CSS rules or styling for the main_box <div> element */
+    background-image: url(photo.jpg);
+    background-size: cover;
+    height: 100vh; /* means, the height of the main box is equals to 100% of viewport's(browser window) height
+    and here, 'vh' is a relative unit, which means or is equals to 1% of viewport's height. */
+}
+
+#btn_one { /*CSS rules or styling for the 1st label of <checkbox> element */
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 15px;
+    line-height: 60px;
+    cursor: pointer;
+    transition: opacity 0.3s ease 0s;
+}
+
+#sidebar_menu { /*CSS rules or styling for the sidebar menu element */
+    position: fixed;
+    left: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    transition: left 0.3s ease-in-out 0s;
+}
+
+#sidebar_menu #logo { /*CSS rules or styling for the logo of the webpage */
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    line-height: 60px;
+    box-shadow: 0 2px 3px rgba(255, 255, 255, 0.5);
+}
+
+#sidebar_menu #logo a { /*CSS rules or styling for the text of the logo of the webpage */
+    position:absolute;
+    left: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+}
+
+#sidebar_menu #btn_two i { /*CSS rules or styling for the 2nd label of <checkbox> element. */
+    color: grey;
+    font-size: 25px;
+    line-height: 60px;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+#sidebar_menu #menu { /*CSS rules or styling for the menu options of the sidebar_menu of the webpage. */
+    color:white;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+}
+
+#sidebar_menu #menu li {  /*CSS rules or styling for all the list items(otpions) of the menu of the sidebar_menu. */
+    margin-top: 5px;
+    padding: 15px 20px;
+}
+
+#siderbar_menu #menu i,a { /*CSS rules or styling for the icons and anchor tags of the list items or menu options
+                            of the sidebar_menu. */
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+}
+
+#sidebar_menu #social_media { /*CSS rules or styling for the social media panel at the bottom of the sidebar_menu. */
+    width: 100%; 
+    height: 70px;
+    position: absolute;
+    bottom: 300px;
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+#sidebar_menu #social_media i { /*CSS rules or styling for the icons of different social media in the social
+                                media panel of the sidebar_menu. */
+    opacity: 0.75;
+    margin: 10px 2px;
+}
+
+#check { /*CSS rules or styling for the <checkbox> element */
+    display: none; /* means, the checkbox element is now hidden in the webpage and doesn't occupies any space. */
+}
+
+#sidebar_menu #menu li:hover { /*CSS rules or styling for the menu options, when cursor hovers above them */
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+#btn_one i:hover { /*CSS rules or styling for the 1st label of the checkbox element, when cursor hovers above it. */
+    font-size: 40px;
+}
+
+#sidebar_menu #btn_two i:hover { /*CSS rules or styling for the 2nd label of <checkbox> element, when cursor
+                                hovers above it. */
+    font-size: 30px;
+}
+
+#sidebar_menu #social_media i:hover{ /*CSS rules or styling for the icons in the social media panel, when the
+                                    cursor hovers above them. */
+    opacity: 1;   
+    transform: scale(1.4);
+}
+
+#check:checked ~ #sidebar_menu { /*CSS rules or styling for the sidebar_menu, when the 'checkbox' input element
+                                 is in checked state. */
+    left: 0px;
+}
+
+#check:checked ~ #btn_one { /*CSS rules or styling for the 1st label of <checkbox> element, when the <checkbox>
+                            input element is in checked state. */
+    /* display: none; or */
+    opacity: 0;
+    /* z-index: -1; */
+}
+

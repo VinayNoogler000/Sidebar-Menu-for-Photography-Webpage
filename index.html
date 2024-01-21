@@ -1,0 +1,113 @@
+<!-- HTML file to Create a Mini Project, which is a Side Bar menu for photography webpage, using CSS. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Mini Project</title>
+
+  <!-- below👇 link tags are from fonts.google.com to add font-styles to this webpage. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+
+  <!-- below👇 link tag is from font-awesome.com to add Icons to this webpage. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- below👇 link tag is to link the stylesheet 'style.css' to add style to this webpage.  -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  <!-- The below <div> element specifies the part where the development is going to be done or the main
+      part of the web page.-->
+  <div id="main_box">
+
+    <!-- Inside the main_box, a checkbox is created, which is when checked or unchecked then the side bar menu
+    opens or closes, respectively, according to the defined CSS rules to this checkbox.  -->
+    <input type="checkbox" id="check" />
+
+    <!-- Below <div> element contains the 1st label for checkbox, whose icon is 'bars' or three lines, which
+        is going to behave like a button, as it will open the sidebar menu, when the label is clicked, as
+         checkbox will be checked. It's id is button_one, but it is not an actual button, it is just going
+        to behave like a button. -->
+    <div id="btn_one">
+      <label for="check">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+    </div>
+
+    <!-- Below <div> element is defined as the whole sidebar menu, or as the container, which is going to have
+        all menu options with their icons. -->
+    <div id="sidebar_menu">
+
+      <!-- In the start or top of the sidebar menu, a logo of the webpage is created, using anchor tag,
+        as usually the logo is the hyperlink to the home page of website.   -->
+      <div id="logo">
+        <a href="#">VT Photography</a>
+      </div>
+
+      <!-- After the logo of the webpage, a 2nd label is created for 'checkbox' element, whose icon is 'X' 
+        mark, which is going to behave like a button, that closes the sidebar menu when clicked, as it 
+        unchecks the checkbox and the defined CSS rules are applied to the sidebar menu, according to the
+        checkbox. -->
+      <div id="btn_two">
+        <label for="check">
+          <i class="fa-solid fa-xmark"></i>
+        </label>
+      </div>
+
+      <!-- In the sidebar menu, below the logo and the 'x' icon, the menu options are created using unordered
+        list, and every list item(which is menu option) is created using anchor tag, with a specific icon. -->
+      <div id="menu">
+        <ul>
+          <li> <!--1st List item-->
+            <i class="fa-solid fa-image"></i> <!-- Gallery icon -->
+            <a href="#">Gallery</a> <!-- Gallery menu option-->
+          </li>
+          <li> <!--2nd List item-->
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> <!-- Shortcuts icon -->
+            <a href="#">Shortcuts</a> <!-- Shortcut menu option-->
+          </li>
+          <li> <!--3rd List item-->
+            <i class="fa-solid fa-photo-film"></i> <!-- Photo Exhibits icon -->
+            <a href="#">Exhibits</a> <!-- Photo Exibits menu option-->
+          </li>
+          <li> <!--4th List item-->
+            <i class="fa-solid fa-calendar-days"></i> <!-- Events icon-->
+            <a href="#">Events</a> <!-- Event menu option-->
+          </li>
+          <li> <!--5th List item-->
+            <i class="fa-solid fa-store"></i> <!-- Store icon -->
+            <a href="#">Store</a> <!-- Store menu option -->
+          </li>
+          <li> <!--6th List item-->
+            <i class="fa-solid fa-phone"></i> <!-- Contact icon -->
+            <a href="#">Contact</a> <!-- Contact menu option-->
+          </li>
+          <li> <!--7th List item-->
+            <i class="fa-regular fa-comments"></i> <!-- Feedback icon-->
+            <a href="#">Feedback</a> <!-- Feedback menu option-->
+          </li>
+        </ul>
+      </div>
+
+      <!-- In the sidebar meny, below the list of menu options, at the bottom of the sidebar menu, a social
+        media panel is created with their symbols, using anchor tags. -->
+      <div id="social_media">
+        <ul>
+          <a href="#"><i class="fa-brands fa-facebook" style="color: #1877f2;"></i></a> <!-- Facebook account-->
+          <a href="#"><i class="fa-brands fa-instagram" style="color: #E1306C"></i></a> <!-- Instagram account-->
+          <a href="#"><i class="fa-brands fa-twitter" style="color: #1DA1F2;"></i></a> <!-- Twitter account -->
+          <a href="#"><i class="fa-brands fa-youtube" style="color: #FF0000"></i></a> <!-- Youtube account-->
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

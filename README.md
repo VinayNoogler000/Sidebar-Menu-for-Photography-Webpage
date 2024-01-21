@@ -1,6 +1,6 @@
 # Sidebar-Menu-For-Photography-Webpage
 
-I'm delighted to announce the successful completion of my first project as a software developer, which is a mini-project – a moment I had eagerly anticipated. This project embodies the fusion of theoretical knowledge and practical application. 😌 
+I'm delighted to announce the successful completion of my first project as a software developer, which is a mini-project – a moment I had eagerly anticipated. This project embodies the fusion of theoretical knowledge and practical application.
 
 In this project, I crafted a sleek sidebar menu designed for a photography website.
 
